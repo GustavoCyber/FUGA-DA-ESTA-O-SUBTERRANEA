@@ -70,11 +70,11 @@ int main() {
         cin >> escolhaFinal;
 
         if (escolhaFinal == 'A' || escolhaFinal == 'a') {
-            cout << "\n*** MENTE BOA : O ESPECIALISTA ***" << endl;
+            cout << "\n*** FINAL BOM 1: O ESPECIALISTA ***" << endl;
             cout << "Voce foi preciso e decolou a tempo. Voce sobreviveu com " << oxigenio << "% de ar!" << endl;
         } else {
             oxigenio = oxigenio - 50; // Penalidade fatal por demora
-            cout << "\n*** OXIGENIO ZERADO : ASFIXIA ***" << endl;
+            cout << "\n*** FINAL RUIM 1: ASFIXIA ***" << endl;
             cout << "Sua ganancia foi fatal. O oxigenio chegou a 0% enquanto voce procurava itens." << endl;
         }
     } 
@@ -86,11 +86,11 @@ int main() {
         cin >> escolhaFinal;
 
         if (escolhaFinal == 'A' || escolhaFinal == 'a') {
-            cout << "\n*** EXPERTISE É TUDO : SOBREVIVENTE VELOZ ***" << endl;
+            cout << "\n*** FINAL BOM 2: SOBREVIVENTE VELOZ ***" << endl;
             cout << "Voce saiu antes que o traje quebrasse! Oxigenio final: " << oxigenio << "%" << endl;
         } else {
             oxigenio = 0; // Morte súbita por falha do equipamento
-            cout << "\n*** GAME OVER : DESCOMPRESSAO ***" << endl;
+            cout << "\n*** FINAL RUIM 2: DESCOMPRESSAO ***" << endl;
             cout << "O tempo que voce perdeu tentando consertar fez o traje explodir. Voce morreu." << endl;
         }
     }
